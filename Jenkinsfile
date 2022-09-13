@@ -1,5 +1,11 @@
 pipeline {
   agent any
+  environment {
+      AWS_ACCOUNT_ID="870920198456"
+      AWS_DEFAULT_REGION="us-east-2"
+      AWS_REGION = 'us-east-2'
+      POPESA = credentials('my.aws.credentials')
+  }
   options {
     skipDefaultCheckout(true)
   }
