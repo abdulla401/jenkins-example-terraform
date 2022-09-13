@@ -6,6 +6,8 @@ pipeline {
   stages{
     stage('clean workspace') {
       steps {
+        sh 'cat /etc/os-release'
+        sh 'uname -r'
         cleanWs()
       }
     }
