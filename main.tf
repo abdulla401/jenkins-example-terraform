@@ -3,7 +3,7 @@ provider "aws" {
 }
 
 resource "aws_s3_bucket" "first_bucket" {
-  bucket = "abd4012-first-bucket"
+  bucket = "abd40123-first-bucket"
 }
 
 output "jenkins_terraform" {
